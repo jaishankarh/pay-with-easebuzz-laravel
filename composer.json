@@ -12,5 +12,6 @@
             "email": "Jaishankarh@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
