@@ -303,6 +303,13 @@
             return json_encode($result);
         }
 
+        public function refundStatus($params){
+            // include file
+            include_once('refundStatus.php');
+            $result =  check_status($params, $this->MERCHANT_KEY, $this->SALT, $this->ENV);
+            return json_encode($result);
+        }
+
 
         /*
         * payoutAPI function to payout for particular date.
